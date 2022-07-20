@@ -1,2 +1,38 @@
-＜html>
-＜/html>
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  	<meta name="format-detection" content="telephone=no">
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="index.css" rel="stylesheet">
+  	<title>hello</title>
+	<script>
+    		function start1() {
+    			var c="https://www.baidu.com/s?ie=utf-8&wd=" + document.getElementById("search").value;
+    			window.open(c,"_self");
+    		}
+    </script>
+    </head>
+	<body>
+    <div class="div">
+		<div class="menu"><input type="button" id="menu-input" value="≡"></div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<div>
+			<center>
+				<input type=search class="change-input-text" id="search">
+				<button onclick="start1()" class="btn btn-primary">搜索</button>
+			</center>
+		</div>
+    </div>
+<style>
+    #menu-input{border-radius:10px;background-color:#00000000;border-color:#00000000;}
+    #menu{text-align:right;}
+    #div{background-color:#fafafa;height:600px;text-align: -webkit-center;}
+</style>
+</body>
+</html>
