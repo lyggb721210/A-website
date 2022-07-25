@@ -12,12 +12,15 @@
     			var c="https://www.baidu.com/s?ie=utf-8&wd=" + document.getElementById("search").value;
     			window.open(c,"_self");
     		}
+			function Settings() {
+				open("Settings.html","_self");
+			}
     </script>
     </head>
 	<body>
     <div id="div">
 			<div id="menu">
-				<img src="jpg/a.jpg">
+				<img src="jpg/a.jpg" width="45px" height="45px" onclick="Settings()">
 				<input type="button" class="btn btn-light" value="≡">
 			</div>
 			<br />
