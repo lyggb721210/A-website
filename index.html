@@ -15,12 +15,16 @@
 			function Settings() {
 				open("Settings.html","_self");
 			}
+			window.onload=function() {
+				var word
+				word = ""
+			}
     </script>
     </head>
 	<body>
     <div id="div">
 			<div id="menu">
-				<img src="jpg/a.jpg" width="45px" height="45px" onclick="Settings()">
+				<img src="jpg/a.jpg" onclick="Settings()" id="settings">
 				<input type="button" class="btn btn-light" value="≡">
 			</div>
 			<br />
@@ -28,12 +32,14 @@
 			<div id="main">
 				<input type=search class="change-input-text" id="search">
 				<button onclick="start1()" class="btn btn-primary">百度搜索</button>
-		</div>
+			</div>
+			<div id="b"></div>
     </div>
 <style>
     #menu{text-align:right;}
     #main{text-align:center;}
     #div{background-color:#fafafa;height:600px;text-align: center;}
+	#setting{width:45px;height:45px;filter:invert(100%);}
 </style>
 </body>
 </html>
