@@ -18,10 +18,10 @@
 			window.onload=function() {
 				var word=new array({title:"编程工具",main:new array({jpg:"github",word:"github"},{jpg:"w3c",word:"w3cschool"})});
 				for (var i = 0; i < word.length; i++) {
-					
-					var b =  "<div id='card'><p><img src='jpg/"+array[i].main;
-					document.getElementById("b").innerHTML=
-					
+					for (var p = 0; p < word[i].main[p].length; p++) {
+						var b =  "<div id='card'><p><img src='jpg/"+array[i].main[p].jpg+"' id='img'></p><p>"+word[i].main[p].word+"</p></div>";
+						document.getElementById("b").innerHTML+=b
+					}
 				}
 			}
 			function text() {
