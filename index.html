@@ -16,16 +16,28 @@
 				open("Settings.html","_self");
 			}
 			window.onload=function() {
-				var word=new array({title:"编程工具",main:new array({jpg:"github",word:"github"},{jpg:"w3c",word:"w3cschool"})});
+				var word=new array({title:"编程工具",main:new array({jpg:"github",word:"github"},{jpg:"w3c",word:"W3Cschool"})});
 				for (var i = 0; i < word.length; i++) {
 					for (var p = 0; p < word[i].main[p].length; p++) {
-						var b =  "<div id='card'><p><img src='jpg/"+array[i].main[p].jpg+"' id='img'></p><p>"+word[i].main[p].word+"</p></div>";
-						document.getElementById("b").innerHTML+=b
+						var b =  "<div id='card' onload=href("+ord[i].main[p].word+")><p><img src='jpg/"+array[i].main[p].jpg+"' id='img'></p><p>"+word[i].main[p].word+"</p></div>";
+						document.getElementById("b").innerHTML+=b;
 					}
 				}
 			}
 			function text() {
-				open("jhb.html","_self")
+				open("jhb.html","_self");
+			}
+			function href(f) {
+				switch (f) {
+					case "github":
+						open("https://github.com","_self")
+						break;
+					case "W3Cschool":
+						open("https://www.w3cschool.cn","_self")
+					default:
+						alert("错误，not found '"+f+"'")
+						break;
+				}
 			}
     </script>
     </head>
@@ -49,7 +61,7 @@
         #main{text-align:center;}
         #div{height:600px;text-align: center;}
         #settings{width:45px;height:45px;}
-        #card{width: 55px;height: 75px;text-align: center;background-color: rgb(57, 154, 167);border-radius: 5px;}
+        #card{width: 55px;height: 75px;text-align: center;background-color: rgb(209, 209, 209);border-radius: 5px;}
         #img{width: 35px;height: 35px;border-radius: 50%;border-width: 1px;border-color: #000000;}
     </style>
 </body>
