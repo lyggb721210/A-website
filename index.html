@@ -15,15 +15,6 @@
 			function Settings() {
 				open("Settings.html","_self");
 			}
-			window.onload=function() {
-				var word=[{title:"编程工具",main:[{jpg:"github",word:"github"},{jpg:"w3c",word:"W3Cschool"}]}];
-				for (var i = 0; i < word.length; i++) {
-					for (var p = 0; p < word[i].main[p].length; p++) {
-						var b =  "<div id='card' onload=href("+ord[i].main[p].word+")><p><img src='jpg/"+array[i].main[p].jpg+"' id='img'></p><p>"+word[i].main[p].word+"</p></div>";
-						document.getElementById("b").innerHTML+=b;
-					}
-				}
-			}
 			function text() {
 				open("jhb.html","_self");
 			}
@@ -54,7 +45,19 @@
 				<input type=search class="change-input-text" id="search">
 				<button onclick="start1()" class="btn btn-primary">百度搜索</button>
 			</div>
-			<div id="b"></div>
+			<div id="b">
+				<Script>
+					window.onload=function() {
+						var word=[{title:"编程工具",main:[{jpg:"github",word:"github"},{jpg:"w3c",word:"W3Cschool"}]}];
+						for (var i = 0; i < word.length; i++) {
+							for (var p = 0; p < word[i].main[p].length; p++) {
+								var b =  "<div id='card' onload=href("+ord[i].main[p].word+")><p><img src='jpg/"+array[i].main[p].jpg+"' id='img'></p><p>"+word[i].main[p].word+"</p></div>";
+								document.getElementById("b").innerHTML =+ b;
+					}
+				}
+			}
+				</Script>
+			</div>
     </div>
     <style>
         #menu{text-align:right;}
