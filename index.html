@@ -52,10 +52,10 @@
 						for (var i = 0; i < word.length; i++) {
 							for (var p = 0; p < word[i].main[p].length; p++) {
 								var b =  "<div id='card' onload=href("+ord[i].main[p].word+")><p><img src='jpg/"+array[i].main[p].jpg+"' id='img'></p><p>"+word[i].main[p].word+"</p></div>";
-								document.getElementById("b").innerHTML =+ b;
+								document.write(b)
+							}
+						}
 					}
-				}
-			}
 				</Script>
 			</div>
     </div>
