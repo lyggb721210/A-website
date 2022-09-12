@@ -8,24 +8,25 @@
 	<link href="index.css" rel="stylesheet">
   	<title>hello</title>
 	<script>
-    		function start1() {
-    			var c="https://www.baidu.com/s?ie=utf-8&wd=" + document.getElementById("search").value;
-    			window.open(c,"_self");
-    		}
-			function Settings() {
-				open("Settings.html","_self");
-			}
-			function href(f) {
-				switch (f) {
-					case "github":
-						open("https://github.com","_self")
-						break;
-					case "w3c":
-						open("https://www.w3cschool.cn","_self")
-					default:
-						alert("错误，not found '"+f+"'")
-						break;
-				}
+    	function start1() {
+    		var c="https://www.baidu.com/s?ie=utf-8&wd=" + document.getElementById("search").value;
+    		window.open(c,"_self");
+    	}
+		function Settings() {
+			open("Settings.html","_self");
+		}
+		function href(f) {
+			switch (f) {
+				case "github":
+					open("https://github.com","_self")
+					break;
+				case "w3c":
+					open("https://www.w3cschool.cn","_self")
+				default:
+					alert("错误，not found '"+f+"'")
+					break;
+		function open-github() {
+			open("https://github.com","_self")
 			}
     </script>
     </head>
@@ -42,7 +43,7 @@
 				<button onclick="start1()" class="btn btn-primary">百度搜索</button>
 			</div>
 			<div id="b"> 
-				<button id="card" class="btn btn-light" onclick="href(github)"> <img src="" id="img"></button>
+				<button id="card" class="btn btn-light" onclick="open-github"> <img src="" id="img"></button>
 				<button id="card" class="btn btn-light" onclick="href(w3c)"><img src="" id="img"></button>
 				</div>
 				<Script>
