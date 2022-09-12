@@ -20,7 +20,7 @@
 					case "github":
 						open("https://github.com","_self")
 						break;
-					case "W3Cschool":
+					case "w3c":
 						open("https://www.w3cschool.cn","_self")
 					default:
 						alert("错误，not found '"+f+"'")
@@ -42,8 +42,8 @@
 				<button onclick="start1()" class="btn btn-primary">百度搜索</button>
 			</div>
 			<div id="b"> 
-				<button id="card" class="btn btn-light"><img src="" id="img"></button>
-				<button id="card" class="btn btn-light"><img src="" id="img"></button>
+				<button id="card" class="btn btn-light" onclick="href(github)"> <img src="" id="img"></button>
+				<button id="card" class="btn btn-light" onclick="href(w3c)"><img src="" id="img"></button>
 				</div>
 				<Script>
 					window.onload=function() {
