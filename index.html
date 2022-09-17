@@ -15,49 +15,30 @@
 		function Settings() {
 			open("Settings.html","_self");
 		}
-		function href(f) {
-			switch (f) {
-				case "github":
-					open("https://github.com","_self")
-					break;
-				case "w3c":
-					open("https://www.w3cschool.cn","_self")
-				default:
-					alert("错误，not found '"+f+"'")
-					break;
-		function open-github() {
-			open("https://github.com","_self")
-			}
     </script>
     </head>
 	<body>
-    <div id="div">
+	<div id="div">
 			<div id="menu">
 				<img src="jpg/a.jpg" onclick="Settings()" id="settings">
 				<input type="button" class="btn btn-light" value="≡">
 			</div>
 			<br />
-    		<br />
+    	  <br />
 			<div id="main">
-				<input type=search class="change-input-text" id="search">
+				<input type=search class="change-input-text" id="sarch">
 				<button onclick="start1()" class="btn btn-primary">百度搜索</button>
 			</div>
+			<br>
+			<br>
 			<div id="b"> 
+				&nbsp&nbsp&nbsp
 				<a href="https://github.com" id="card" class="btn btn-light" onclick="open-github"> <img src="" id="img"></a>
+				&nbsp
 				<a href="https://www.w3cschool.cn" id="card" class="btn btn-light" onclick="href(w3c)"><img src="" id="img"></a>
-				</div>
-				<Script>
-					window.onload=function() {
-						var word=[{title:"编程工具",main:[{jpg:"github",word:"github"},{jpg:"w3c",word:"W3Cschool"}]}];
-						for (var i = 0; i < word.length; i++) {
-							for (var p = 0; p < word[i].main[p].length; p++) {
-								var b =  "<div id='card' onload=href("+ord[i].main[p].word+")><p><img src='jpg/"+array[i].main[p].jpg+"' id='img'></p><p>"+word[i].main[p].word+"</p></div>";
-								document.write(b)
-							}
-									}
-					}
-				</Script>
 			</div>
+
+		</div>
     </div>
     <style>
         #menu{text-align:right;}
@@ -66,8 +47,8 @@
         #settings{width:45px;height:45px;}
         #card{width: 55px;height: 75px;text-align: center;background-color: rgb(209, 209, 209);border-radius: 5px;}
         #img{width: 35px;height: 35px;border-radius: 50%;border-width: 1px;border-color: #000000;}
-		#br{height: 1px;color: aquamarine;}
-		#b{text-align: left;}
+		  #br{height: 1px;color: aquamarine;}
+		  #b{text-align: left;}
     </style>
 </body>
 </html>
