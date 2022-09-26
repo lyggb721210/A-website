@@ -5,13 +5,16 @@
         <meta name="format-detection" content="telephone=no">
         <link href="jquery-3.6.0.js" rel="stylesheet">
 		  <script>
-		  	
+              window.onload=function(){
+                  $("#cloud").animate({left:"100%"},3000)
+              }
 		  </script>
     </head>
-    <body>
+    <body >
         <img src="jpg/cloud.jpg" id="cloud">
     </body>
     <style>
         #cloud{height: 40%;width: 40%;}
+        body{background-color: aqua;}
     </style>
 </html>
