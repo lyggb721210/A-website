@@ -6,9 +6,7 @@
 作者：yxr / 栗子味东方
 当前版本：V1.23
 """
-import turtle
 print("欢迎使用")
-#以下为地图部分
 import map
 nmber = 0
 inmap = map.inmap[nmber]
@@ -61,14 +59,13 @@ if a == "1":
                 if a == "1":
                     if nmber < len(inmap):
                         nmber = nmber + 1
-                        inmap = inmap + 1
                         inmap = map.inmap[nmber]
-                    elif nmber >= len(inmap):
+                    elif nmber >= len(inmap-1):
                         print("关卡已结束")
                         exit()
                 elif a == "2":
                     exit()
-elif a == 2:
+elif a == "2":
     print("这是一个地图闯关游戏,目前只有第1关")
     print("在游戏中可以输入w,a,s,d来控制😊的移动")
     print("(输入后要按enter表示确定)")
