@@ -3,8 +3,8 @@
 这是作者的第2个python程序若有问题请见谅
 有BUG可联系作者
 邮箱：lyggb721210@163.com
-作者：yxr / 栗子味东方
-当前版本：V1.23
+作者：yxrlyg / 栗子味东方
+当前版本：V1.23.pre432 测试版
 """
 print("欢迎使用")
 import map
@@ -57,16 +57,16 @@ if a == "1":
                 print("请输入前面序号")
                 a = input()
                 if a == "1":
-                    if nmber < len(inmap):
+                    if nmber < len(inmap)-1:
                         nmber = nmber + 1
                         inmap = map.inmap[nmber]
-                    elif nmber >= len(inmap-1):
+                    elif nmber >= len(inmap)-1:
                         print("关卡已结束")
                         exit()
                 elif a == "2":
                     exit()
 elif a == "2":
-    print("这是一个地图闯关游戏,目前只有第1关")
+    print("这是一个迷宫闯关游戏,目前有2关")
     print("在游戏中可以输入w,a,s,d来控制😊的移动")
     print("(输入后要按enter表示确定)")
     print("祝您游玩愉快")
