@@ -5,9 +5,3 @@ function hgh(){
         i+1;
     }
 }
-function hghj(){
-    var a=document.getElementById("#as");
-    for(i=1,i<a.len){
-
-    }
-}
