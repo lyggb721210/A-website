@@ -18,14 +18,13 @@
     </div>
 	<style>
 		#a{background-image: none;}
-		#as{opacity: 0;top: 10px;}
+		#as{opacity: 1;top: 30px;}
 	</style>
 	<script>
 		window.onlond=function(){
     		var i=1
     		while (i<=2) {
-				$("#as").css("top","10")
-        		$("#s"+i).animate({top:"-=10px",opacity:"-=1"},2500);
+        		$("#s"+i).animate({top:"0px",opacity:"0"},2500);
         		i+1;
     		}
 		}
