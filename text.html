@@ -1,37 +1,67 @@
 <!doctype html>
 <html>
+
 <head>
 	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-  	<meta name="format-detection" content="telephone=no">
-	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<!--<link href="bootstrap/css/bootstrap.css" rel="stylesheet">-->
 	<script src="index.js"></script>
 	<script src="jquery-1.12.4.js"></script>
-	<link href="index.css" rel="stylesheet">
+	<title>hello</title>
 </head>
+
 <body>
-    <div class="container">
-        <div id="a" class="jumbotron">
-            <div class="page-header"><h1 id="s1 as">欢迎来到这里</h1></div>
-			<p hidden id="s2 as">只要敢做，就一定能成功</p>
-        </div>
-    </div>
+	<div class="container">
+		<div id="jumbotron center">
+			<div class="page-header">
+				<h1 id="s1 as">欢迎来到这里</h1>
+			</div>
+			<p id="s2 as">只要敢做，就一定能成功</p>
+		</div>
+	</div>
 	<style>
-		#a{background-image: none;}
-		#as{opacity: 1;top: 30px;}
+		#center {
+			text-align: center;
+		}
+
+		#as {
+			opacity: 1;
+			top: 30px;
+		}
+
+		#jumbotron {
+			border-radius: 5px;
+			background-image: none;
+			background-repeat: no-repeat;
+			background-color: #009bf5;
+			height: 180px;
+			width: 80%;
+			border: 2px solid #0563ce;
+			padding-top: 15px;
+			padding-right: 15px;
+			padding-bottom: 15px;
+			padding-left: 30px;
+			margin-top: 50px;
+		}
+		
+		#center>* {
+			text-align: left;
+		}
 	</style>
 	<script>
-		window.onlond=function(){
-    		var i=1
-    		while (i<=2) {
-        		$("#s"+i).animate({top:"0px",opacity:"0"},2500);
-        		i+1;
-    		}
+		window.onlond = function () {
+			var i = 1
+			while (i <= 2) {
+				$("#s" + i).animate({ top: "0px", opacity: "0" }, 2500);
+				i + 1;
+			}
 		}
 	</script>
 	<script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
 	<script>
-	    var vConsole = new window.VConsole();
+		var vConsole = new window.VConsole();
 	</script>
 </body>
+
 </html>
