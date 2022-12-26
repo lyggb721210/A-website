@@ -1,7 +1,6 @@
-function hgh(){
-    var i=1
-    while (i<2) {
-        $("#as:eq("+i+")").animate({top:"-=10px",opacity:"-=1"},2500);
-        i+1;
-    }
+function Github() {
+    open('https://github.com/lyggb721210'),'_self';
+}
+function Gitee() {
+    open('https://gitee.com/lyggb721210'),'_self';
 }

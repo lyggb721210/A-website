@@ -1,3 +1,57 @@
 @charset "UTF-8";
-#a{background-image: none;}
-#as{opacity: 0;top: 10px;}
+.center {
+    text-align: center;
+}
+
+#as {
+    opacity: 1;
+    top: 30px;
+}
+
+#jumbotron {
+    border-radius: 5px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-color: #009bf5;
+    height: 180px;
+    width: 80%;
+    border: 2px solid #0563ce;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 11px;
+    padding-left: 30px;
+    margin-top: 25px;
+}
+
+#Github {
+    background: #000;
+    border: 2px solid rgb(63, 62, 62);
+    color: white;
+    font-size: inherit;
+    border-radius: 4px;
+    margin-top: 3px;
+    height: 30px;
+}
+
+#Gitee {
+    background: rgb(255, 115, 34);
+    border: 2px solid rgb(255, 169, 120);
+    color: white;
+    font-size: inherit;
+    border-radius: 4px;
+    margin-top: 3px;
+    height: 30px;
+}
+
+#page-header{
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    font-weight: bold;
+}
+
+a{
+    border-radius: 5px;
+    background-color: #009bf5;
+    border: 2px solid #0563ce9d;
+}

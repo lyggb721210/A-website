@@ -19,7 +19,8 @@
 				欢迎来到这里
 			</div>
 			<p id="s2 as">只要敢做，就一定能成功</p>
-			<input type="button" value="Github" onclick="open('https://github.com/lyggb721210'),'_self'">
+			<input id="Github" type="button" value="Github" onclick="Github()">
+			<input id="Gitee" type="button" value="Gitee" onclick="Gitee()">
 		</div>
 	</center>
 	<style>
@@ -42,13 +43,29 @@
 			border: 2px solid #0563ce;
 			padding-top: 15px;
 			padding-right: 15px;
-			padding-bottom: 15px;
+			padding-bottom: 11px;
 			padding-left: 30px;
 			margin-top: 25px;
 		}
 
-		input[button] {
-			
+		#Github {
+			background: #000;
+			border: 2px solid rgb(63, 62, 62);
+			color: white;
+			font-size: inherit;
+			border-radius: 4px;
+			margin-top: 3px;
+			height: 30px;
+		}
+
+		#Gitee {
+			background: rgb(255, 115, 34);
+			border: 2px solid rgb(255, 169, 120);
+			color: white;
+			font-size: inherit;
+			border-radius: 4px;
+			margin-top: 3px;
+			height: 30px;
 		}
 		
 		#page-header{
@@ -80,6 +97,12 @@
 	<script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
 	<script>
 		var vConsole = new window.VConsole();
+		function Github() {
+			open('https://github.com/lyggb721210'),'_self';
+		}
+		function Gitee() {
+			open('https://gitee.com/lyggb721210'),'_self';
+		}
 	</script>
 </body>
 
