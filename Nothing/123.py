@@ -1,3 +1,4 @@
+#coding:"utf-8"
 print("欢迎使用-版本V2.145_yxr") 
 while 1 == 1:    
     print("\n1.加法运算") 
