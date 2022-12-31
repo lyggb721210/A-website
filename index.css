@@ -1,4 +1,8 @@
 @charset "UTF-8";
+#img-winter {
+    background-image: url(/PNG/winter.jpg);
+}
+
 .center {
     text-align: center;
 }
@@ -31,6 +35,7 @@
     border-radius: 4px;
     margin-top: 3px;
     height: 30px;
+    transition: 800ms;
 }
 
 #Gitee {
@@ -41,17 +46,26 @@
     border-radius: 4px;
     margin-top: 3px;
     height: 30px;
+    transition: 800ms;
 }
 
-#page-header{
+#hover:hover {
+    border: 5px;
+}
+
+#page-header {
     display: block;
     font-size: 2em;
     margin-top: 0.67em;
     font-weight: bold;
 }
 
-a{
+a {
     border-radius: 5px;
     background-color: #009bf5;
     border: 2px solid #0563ce9d;
+}
+
+center>* {
+    text-align: left;
 }
