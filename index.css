@@ -1,8 +1,4 @@
 @charset "UTF-8";
-#img-winter {
-    background-image: url(/PNG/winter.jpg);
-}
-
 .center {
     text-align: center;
 }
@@ -25,6 +21,12 @@
     padding-bottom: 11px;
     padding-left: 30px;
     margin-top: 25px;
+	background-image: url(PNG/winter.jpg);
+	transition: 500ms;
+}
+
+#jumbotron:hover{
+	border: 5px solid #0563ce;
 }
 
 #Github {
@@ -35,8 +37,8 @@
     border-radius: 4px;
     margin-top: 3px;
     height: 30px;
-    transition: 800ms;
-}
+    transition: 500ms;
+ub}
 
 #Gitee {
     background: rgb(255, 115, 34);
@@ -46,11 +48,15 @@
     border-radius: 4px;
     margin-top: 3px;
     height: 30px;
-    transition: 800ms;
+    transition: 500ms;
 }
 
-#hover:hover {
-    border: 5px;
+#Github:hover {
+    border: 5px solid rgb(63, 62, 62);
+}
+
+#Gitee:hover {
+    border: 5px solid rgb(255, 169, 120);
 }
 
 #page-header {
