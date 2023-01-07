@@ -22,7 +22,6 @@
     margin-top: 25px;
 	background-image: url(PNG/winter.jpg);
 	transition: 500ms;
-    position: fixed;
 }
 
 #jumbotron:hover{
@@ -38,7 +37,6 @@
     margin-top: 3px;
     height: 30px;
     transition: 500ms;
-    position: fixed;
 }
 
 #Gitee {
@@ -50,7 +48,6 @@
     margin-top: 3px;
     height: 30px;
     transition: 500ms;
-    position: fixed;
 }
 
 #Github:hover {
