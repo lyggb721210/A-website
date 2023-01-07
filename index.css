@@ -5,12 +5,11 @@
 
 #as {
     opacity: 1;
-    top: 30px;
+    top: 30px; 
 }
 
 #jumbotron {
     border-radius: 5px;
-    background-image: none;
     background-repeat: no-repeat;
     background-color: #009bf5;
     height: 180px;
@@ -23,6 +22,7 @@
     margin-top: 25px;
 	background-image: url(PNG/winter.jpg);
 	transition: 500ms;
+    position: fixed;
 }
 
 #jumbotron:hover{
@@ -38,7 +38,8 @@
     margin-top: 3px;
     height: 30px;
     transition: 500ms;
-ub}
+    position: fixed;
+}
 
 #Gitee {
     background: rgb(255, 115, 34);
@@ -49,6 +50,7 @@ ub}
     margin-top: 3px;
     height: 30px;
     transition: 500ms;
+    position: fixed;
 }
 
 #Github:hover {
