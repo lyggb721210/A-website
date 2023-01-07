@@ -1,9 +1,54 @@
 @charset "UTF-8";
-#menu{text-align:right;}
-#main{text-align:center;}
-#div{height:600px;text-align: center;}
-#settings{width:45px;height:45px;}
-#card{width: 60px;height: 70px;text-align: center;border-radius: 5px;font-size: 8px;}
-#img{width: 35px;height: 35px;border-radius: 50%;border-width: 1px;border-color: #000000;}
-#br{height: 1px;color: aquamarine;}
-#b{text-align: left;}
+
+#menu {
+    text-align: right;
+}
+
+#main {
+    text-align: center;
+}
+
+#div {
+    height: 600px;
+    text-align: center;
+}
+
+#settings {
+    width: 45px;
+    height: 45px;
+}
+
+#card {
+    width: 60px;
+    height: 70px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 8px;
+}
+
+#img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border-width: 1px;
+    border-color: #000000;
+}
+
+#br {
+    height: 1px;
+    color: aquamarine;
+}
+
+#b {
+    text-align: left;
+}
+
+h5 {
+    margin: 5px;
+}
+
+#search {
+    padding: 4px;
+    border-color: #0d6efd;
+    border-radius: 0.375rem;
+}
