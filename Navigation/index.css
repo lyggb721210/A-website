@@ -19,11 +19,12 @@
 }
 
 #card {
-    width: 60px;
     height: 70px;
-    text-align: center;
     border-radius: 5px;
     font-size: 8px;
+    margin: 3px 0px 3px 0px;
+    text-align: unset;
+    padding: 16px;
 }
 
 #img {
